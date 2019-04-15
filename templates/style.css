@@ -1,0 +1,37 @@
+
+
+.jumbotron {
+    text-align: center;
+    background: url("https://www.popsci.com/sites/popsci.com/files/styles/655_1x_/public/images/2016/04/marsimage4.jpg?itok=gpuPLEQN");
+    background-size: cover;
+
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+
+#featured-image-card {
+    margin: none;
+    padding: none;
+}
+/* 
+.card {
+    margin: 20px;
+    /* width: 18rem; */
+} */
+
+
+p {
+ text-align: justify;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.table-condensed {
+    font-size:  12px;
+}
+
