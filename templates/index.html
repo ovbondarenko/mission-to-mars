@@ -28,7 +28,8 @@
 
     <div class = "container">
         <h2 class = "title"> Latest Mars News</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perspiciatis, illum ex repudiandae, nostrum magnam eum officiis labore, accusantium ipsa voluptatum vel vitae voluptas assumenda placeat reprehenderit distinctio harum aliquam.</p>
+            <h5 class = "card-title"> {{ news['news-title'] }} </h5>
+            <p> {{ news['news-summary'] }} </p>
     </div>
 
     <div class = "container">
@@ -38,7 +39,7 @@
             <div class="col-xs-12 col-sm-12 col-md-8 col-xl-8">
             <div class = "card" id="featured-image-card">
                 <h2> Featured Image</h2>
-                <img  class ="card-img-top" src = "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2018/04/comparing_the_atmospheres_of_mars_and_earth/17444033-1-eng-GB/Comparing_the_atmospheres_of_Mars_and_Earth_large.jpg" alt="featured image">
+                <img  class ="card-img-top" src = {{news['featured-image-url']}} alt="featured image">
             </div>
             </div>
 
@@ -46,7 +47,7 @@
             <div class = "card">
                 <div class = "card-body">
                     <h5 class = "card-title"> Current Weather</h5>
-                    <p class = "card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi earum molestias voluptatem incidunt omnis ratione. Nostrum ad molestiae eligendi est! Fugiat illo veritatis saepe hic velit sit dolore cumque!</p>
+                    <p class = "card-text"> {{news['current-weather']}}</p>
                 </div>
             </div>
 

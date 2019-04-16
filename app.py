@@ -9,12 +9,12 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 
 # Create connection variable
-app.config["MONGO_URI"] = "mongodb://localhost:27017/mars_app"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/mars_db"
 mongo = PyMongo(app)
 
 # Set route
 @app.route('/')
-def index():
+def index(name = None):
     # Store the entire team collection in a list
     news_instance = mongo.db.request_instances.find_one()
     return render_template('index.html', news = news_instance)
